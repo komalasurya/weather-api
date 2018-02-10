@@ -2,14 +2,14 @@
 
 namespace App\Http;
 
-use Acme\Api\InjectModuleConfigTrait;
+use App\InjectModuleConfigTrait;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Illuminate\Routing\Router;
 
 class Kernel extends HttpKernel
 {
-    use InjectModuleConfigTrait;
+    use App\InjectModuleConfigTrait;
 
     /**
      * The application's global HTTP middleware stack.

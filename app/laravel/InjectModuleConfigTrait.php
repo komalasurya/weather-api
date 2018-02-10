@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Acme\Api;
+namespace App;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Bootstrap\LoadConfiguration;
