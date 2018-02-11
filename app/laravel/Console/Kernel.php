@@ -10,7 +10,7 @@ use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
-    use App\InjectModuleConfigTrait;
+    use InjectModuleConfigTrait;
 
     /**
      * The Artisan commands provided by your application.
