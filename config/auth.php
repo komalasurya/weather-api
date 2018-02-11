@@ -70,6 +70,11 @@ return [
             'model' => App\User::class,
         ],
 
+        'stateless' => [
+            'driver' => 'eloquent',
+            'model' => Pandawa\Module\Api\Security\Model\AuthenticatedUser::class,
+        ],
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
