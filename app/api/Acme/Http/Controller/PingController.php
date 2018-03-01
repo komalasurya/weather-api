@@ -3,15 +3,19 @@ declare(strict_types=1);
 
 namespace Acme\Api\Http\Controller;
 
-use Pandawa\Module\Api\Transformer\Transformer;
+use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Http\Request;
+use Pandawa\Module\Api\Http\Controller\InteractsWithRendererTrait;
 
 /**
  * @author  Iqbal Maulana <iq.bluejack@gmail.com>
  */
 class PingController
 {
-    public function ping(): Transformer
+    use InteractsWithRendererTrait;
+
+    public function ping(Request $request): Responsable
     {
-        return new Transformer(['status' => 'pong']);
+        return $this->render($request, ['status' => 'pong']);
     }
 }

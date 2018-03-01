@@ -3,27 +3,15 @@ declare(strict_types=1);
 
 namespace Acme\Api;
 
-use App\Routing\RouteProviderTrait;
 use Pandawa\Component\Module\AbstractModule;
+use Pandawa\Component\Module\Provider\RouteProviderTrait;
 
 /**
- * @mixin \Illuminate\Routing\Router
- *
  * @author  Iqbal Maulana <iq.bluejack@gmail.com>
  */
 final class AcmeApiModule extends AbstractModule
 {
     use RouteProviderTrait;
-
-    /**
-     * {@inheritdoc}
-     */
-    public function boot(): void
-    {
-        parent::boot();
-
-        $this->bootRoute();
-    }
 
     protected function routes(): array
     {
@@ -31,7 +19,7 @@ final class AcmeApiModule extends AbstractModule
             [
                 'type'       => 'group',
                 'middleware' => 'api',
-                'prefix'     => 'v{version}',
+                'prefix'     => 'api/v{version}',
                 'children'   => $this->getCurrentPath() . '/Resources/routes/routes.php',
             ],
         ];
