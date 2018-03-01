@@ -1,6 +1,6 @@
 {
     "name": "pandawa/skeleton",
-    "description": "The pandawa skeleton based on laravel.",
+    "description": "The higher laravel framework for enterprise application.",
     "keywords": ["framework", "pandawa"],
     "license": "MIT",
     "type": "project",
