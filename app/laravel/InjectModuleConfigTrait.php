@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace App;
 
+use App\Bootstrap\LoadConfiguration;
 use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Foundation\Bootstrap\LoadConfiguration;
 
 /**
  * @author  Iqbal Maulana <iq.bluejack@gmail.com>

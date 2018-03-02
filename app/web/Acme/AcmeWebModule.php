@@ -18,7 +18,7 @@ final class AcmeWebModule extends AbstractModule
         return [
             [
                 'type'       => 'group',
-                'children'   => $this->getCurrentPath() . '/Resources/routes/routes.php',
+                'children'   => $this->getCurrentPath() . '/Resources/routes/routes.yaml',
             ],
         ];
     }

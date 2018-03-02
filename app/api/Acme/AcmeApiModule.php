@@ -20,7 +20,7 @@ final class AcmeApiModule extends AbstractModule
                 'type'       => 'group',
                 'middleware' => 'api',
                 'prefix'     => 'api/v{version}',
-                'children'   => $this->getCurrentPath() . '/Resources/routes/routes.php',
+                'children'   => $this->getCurrentPath() . '/Resources/routes/routes.yaml',
             ],
         ];
     }

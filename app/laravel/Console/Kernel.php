@@ -13,6 +13,18 @@ class Kernel extends ConsoleKernel
     use InjectModuleConfigTrait;
 
     /**
+     * @var array
+     */
+    protected $bootstrappers = [
+        \Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables::class,
+        \App\Bootstrap\LoadConfiguration::class,
+        \Illuminate\Foundation\Bootstrap\HandleExceptions::class,
+        \Illuminate\Foundation\Bootstrap\RegisterFacades::class,
+        \Illuminate\Foundation\Bootstrap\RegisterProviders::class,
+        \Illuminate\Foundation\Bootstrap\BootProviders::class,
+    ];
+
+    /**
      * The Artisan commands provided by your application.
      *
      * @var array
