@@ -1199,13 +1199,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bl4ckbon3/pandawa.git",
-                "reference": "5c98c087e7c32fc1c0f2e96f24a820a5fd14df67"
+                "url": "https://github.com/pandawa/pandawa.git",
+                "reference": "845198b76171033c5c079d78a77d38d863302cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bl4ckbon3/pandawa/zipball/5c98c087e7c32fc1c0f2e96f24a820a5fd14df67",
-                "reference": "5c98c087e7c32fc1c0f2e96f24a820a5fd14df67",
+                "url": "https://api.github.com/repos/pandawa/pandawa/zipball/845198b76171033c5c079d78a77d38d863302cec",
+                "reference": "845198b76171033c5c079d78a77d38d863302cec",
                 "shasum": ""
             },
             "require": {
@@ -1230,15 +1230,17 @@
                 "laravel": {
                     "providers": [
                         "Pandawa\\Module\\Api\\PandawaApiModule",
+                        "Pandawa\\Module\\Event\\PandawaEventModule",
                         "Pandawa\\Module\\Bus\\PandawaBusModule",
                         "Pandawa\\Module\\Rule\\PandawaRuleModule",
+                        "Pandawa\\Module\\Ddd\\PandawaDddModule",
                         "Pandawa\\Module\\Resource\\PandawaResourceModule"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "": "src/"
+                    "Pandawa\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1256,7 +1258,7 @@
                 "laravel",
                 "pandawa"
             ],
-            "time": "2018-03-02 14:53:53"
+            "time": "2018-03-07 04:26:09"
         },
         {
             "name": "paragonie/random_compat",
