@@ -5,13 +5,14 @@ namespace Acme\Web;
 
 use Pandawa\Component\Module\AbstractModule;
 use Pandawa\Component\Module\Provider\RouteProviderTrait;
+use Pandawa\Component\Module\Provider\ViewProviderTrait;
 
 /**
  * @author  Iqbal Maulana <iq.bluejack@gmail.com>
  */
 final class AcmeWebModule extends AbstractModule
 {
-    use RouteProviderTrait;
+    use RouteProviderTrait, ViewProviderTrait;
 
     protected function routes(): array
     {
