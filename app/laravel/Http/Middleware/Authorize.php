@@ -39,7 +39,7 @@ class Authorize extends LaravelAuthorize
      */
     public function __construct(Auth $auth, Gate $gate, ResourceRegistryInterface $registry, MessageRegistryInterface $messageRegistry = null)
     {
-        parent::__construct($auth, $gate);
+        parent::__construct($gate);
         $this->registry = $registry;
         $this->auth = $auth;
         $this->messageRegistry = $messageRegistry;
