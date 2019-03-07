@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1c5d6c74f4211c10ce5420bbfbb322f",
+    "content-hash": "281199b4c376055971c863f78e975949",
     "packages": [
         {
             "name": "borobudur/dci",
@@ -1462,16 +1462,16 @@
         },
         {
             "name": "pandawa/pandawa",
-            "version": "v1.0.0-beta",
+            "version": "v1.0.1-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pandawa/pandawa.git",
-                "reference": "7862d14f5348735cef2b3bb0ff3d3383b34a13f6"
+                "reference": "63869acfc802860d35c552cf548a2653c7c77c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pandawa/pandawa/zipball/7862d14f5348735cef2b3bb0ff3d3383b34a13f6",
-                "reference": "7862d14f5348735cef2b3bb0ff3d3383b34a13f6",
+                "url": "https://api.github.com/repos/pandawa/pandawa/zipball/63869acfc802860d35c552cf548a2653c7c77c95",
+                "reference": "63869acfc802860d35c552cf548a2653c7c77c95",
                 "shasum": ""
             },
             "require": {
@@ -1533,7 +1533,7 @@
                 "laravel",
                 "pandawa"
             ],
-            "time": "2019-03-06T06:58:38+00:00"
+            "time": "2019-03-07T10:47:23+00:00"
         },
         {
             "name": "paragonie/random_compat",
