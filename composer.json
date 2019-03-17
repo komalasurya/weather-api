@@ -10,7 +10,7 @@
         "php": ">=7.2",
         "fideloper/proxy": "~4.0",
         "laravel/tinker": "~1.0",
-        "pandawa/pandawa": "^1.0"
+        "pandawa/pandawa": "^1.0@beta"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",
