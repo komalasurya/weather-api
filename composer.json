@@ -12,7 +12,7 @@
         "borobudur/exception": "~0.1@dev",
         "borobudur/parameter": "~0.1@dev",
         "lcobucci/jwt": "^4.0@dev",
-        "pandawa/pandawa": "^2.0"
+        "pandawa/pandawa": "^2.1"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
@@ -41,7 +41,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0"
+            "dev-master": "2.1"
         },
         "laravel": {
             "dont-discover": [
