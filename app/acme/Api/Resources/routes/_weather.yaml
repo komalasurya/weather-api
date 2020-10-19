@@ -1,0 +1,30 @@
+current:
+  type: message
+  path: weathers/current
+  name: weathers.current
+  message: fetch-current
+  methods:
+    - get
+  rules:
+    current
+
+forecast:
+  type: message
+  path: weathers/forecast
+  name: weathers.forecast
+  message: fetch-forecast
+  methods:
+    - get
+  rules:
+    current
+
+report:
+  type: message
+  path: weathers/report
+  name: weathers.report
+  message: create-report
+  middleware: 'auth:api'
+  methods:
+    - post
+  rules:
+    - report

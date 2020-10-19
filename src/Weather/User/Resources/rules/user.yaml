@@ -1,0 +1,10 @@
+login:
+  constraints:
+    username: 'required'
+    password: 'required'
+
+register:
+  constraints:
+    username: 'required'
+    password: 'required|min:5'
+    email: 'required|email'

@@ -3,3 +3,11 @@ ping:
     methods: [get]
     path: ping
     presenter: ping
+
+users:
+    type: group
+    children: _user.yaml
+
+weathers:
+    type: group
+    children: _weather.yaml

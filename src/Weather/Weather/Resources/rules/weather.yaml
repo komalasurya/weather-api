@@ -1,0 +1,10 @@
+current:
+  constraints: &coordinate
+    lat: 'required|numeric|min:-90|max:90'
+    lon: 'required|numeric|min:-180|max:180'
+
+report:
+  constraints:
+    <<: *coordinate
+    image: 'required|image|max:10240'
+    temperature: 'required|numeric|min:-25|max:100'

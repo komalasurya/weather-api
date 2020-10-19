@@ -639,16 +639,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v7.6.2",
+            "version": "v7.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "695be25d84b5cedd0026c428d4e9697fe8cd06f9"
+                "reference": "6e927e78aafd578d59c99608e7f0e23a5f7bfc5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/695be25d84b5cedd0026c428d4e9697fe8cd06f9",
-                "reference": "695be25d84b5cedd0026c428d4e9697fe8cd06f9",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6e927e78aafd578d59c99608e7f0e23a5f7bfc5a",
+                "reference": "6e927e78aafd578d59c99608e7f0e23a5f7bfc5a",
                 "shasum": ""
             },
             "require": {
@@ -752,6 +752,7 @@
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^4.0).",
                 "symfony/cache": "Required to PSR-6 cache bridge (^5.0).",
+                "symfony/filesystem": "Required to create relative storage directory symbolic links (^5.0).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
@@ -786,7 +787,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-04-15T20:57:47+00:00"
+            "time": "2020-05-06T15:36:00+00:00"
         },
         {
             "name": "laravel/helpers",
@@ -1500,12 +1501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pandawa/pandawa.git",
-                "reference": "b412bd932d9805eca0de6c8691c8aa2bcfeeb8aa"
+                "reference": "a7754fbdc1647d0a58dab08ab5c50634ce2298bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pandawa/pandawa/zipball/b412bd932d9805eca0de6c8691c8aa2bcfeeb8aa",
-                "reference": "b412bd932d9805eca0de6c8691c8aa2bcfeeb8aa",
+                "url": "https://api.github.com/repos/pandawa/pandawa/zipball/a7754fbdc1647d0a58dab08ab5c50634ce2298bf",
+                "reference": "a7754fbdc1647d0a58dab08ab5c50634ce2298bf",
                 "shasum": ""
             },
             "require": {
@@ -1568,7 +1569,7 @@
                 "laravel",
                 "pandawa"
             ],
-            "time": "2020-04-20T17:11:58+00:00"
+            "time": "2020-05-01T12:45:32+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -5455,6 +5456,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -6444,5 +6446,6 @@
     "platform": {
         "php": ">=7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
