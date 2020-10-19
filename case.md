@@ -59,7 +59,7 @@ You can access this menu by click register button on [Login Page](##Login). Use 
 ## Report
 ![Report](https://lh3.googleusercontent.com/pw/ACtC-3f-KB-qpdkFu0WbpmHC1OCCpzsXEIu21hPL5oBiR7RXXZM1TBGPyobSkt2LJm7FxeDGbwQRubN4JkZGvAgklTOB_zaxj1rWKiRigQEN_N2rNVj5S7WOyyjCQApgZb5vFJninmmwHjCtlmAv1ACDwKGx=w672-h1446-no)
 
-You can access this page by click add icon/button on top right of homepage. Show logged in username in the greeting placeholder, ask user to login if access token is expired. Open gallery for user to select image when upload button / icon clicked. User should not upload file more than 10MB.
+You can access this page by click add icon/button on top right of homepage. Show logged in username in the greeting placeholder, ask user to login if access token is expired. Open gallery for user to select image when upload button / icon clicked. User should not upload file more than 10MB and only input temperature between -25 and 100.
 
 # API
 
@@ -249,6 +249,18 @@ http://localhost:8000/api/v1
         }
     }
   ```
+
+### Report
+- Path: `/weathers/report`
+- Method: `POST`
+- Request Body:
+  1. lat - user's latitude
+  2. lon - user's longitude
+  3. image
+  4. temperature - between -25 and 100
+- Heades:
+  1. `Accept` = `application/json`
+  2. `Content-Type` = `application/json`
 
 ## Account
 ### Login
