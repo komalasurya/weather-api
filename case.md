@@ -63,10 +63,15 @@ You can access this page by click add icon/button on top right of homepage. Show
 
 # API
 
+Postman Collection
+```
+https://www.getpostman.com/collections/f640ada705f43a3a63a7
+```
+
 ## Host
 Use this host for all APIs
 ```
-http://13.212.136.24/api/v1
+http://18.140.243.251/api/v1
 ```
 
 ## Weather
@@ -86,7 +91,7 @@ http://13.212.136.24/api/v1
   - Request:
   ```curl
   curl -X GET \
-    'http://13.212.136.24/api/v1/weathers/current?lat=-6.164713&lon=106.725050' \
+    'http://18.140.243.251/api/v1/weathers/current?lat=-6.164713&lon=106.725050' \
     -H 'Accept: application/json' \
     -H 'Postman-Token: ccb7600f-484c-439f-afa9-e96e697d1927' \
     -H 'cache-control: no-cache'
@@ -161,7 +166,7 @@ http://13.212.136.24/api/v1
   - Request:
   ```curl
   curl -X GET \
-    'http://13.212.136.24/api/v1/weathers/forecast?lat=-6.164713&lon=106.725050' \
+    'http://18.140.243.251/api/v1/weathers/forecast?lat=-6.164713&lon=106.725050' \
     -H 'Accept: application/json' \
     -H 'Postman-Token: 38efce77-c68c-4747-9dfd-bef4068edd74' \
     -H 'cache-control: no-cache'
@@ -280,7 +285,7 @@ http://13.212.136.24/api/v1
   - Request:
   ```curl
   curl -X POST \
-    http://13.212.136.24/api/v1/auth \
+    http://18.140.243.251/api/v1/auth \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     -H 'Postman-Token: 08490f1e-98f0-446f-8fa1-01c0de8ee1f0' \
@@ -320,7 +325,7 @@ http://13.212.136.24/api/v1
   - Request:
   ```curl
   curl -X POST \
-    http://13.212.136.24/api/v1/users \
+    http://18.140.243.251/api/v1/users \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/json' \
     -H 'Postman-Token: 752254c1-f355-4890-bc3f-695aa0549850' \
